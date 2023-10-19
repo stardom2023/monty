@@ -1,0 +1,1 @@
+This is a project that is about Stacks, Queues-LIFO and FIFO. We have 20 tasks namely; push pall, pint, pop, swap, add, nop, sub, div, mul, mod, comments, pchar, pstr, rotl, rotr, stack queue, brain fuck, add two digits, multiplication, multiplication level up.

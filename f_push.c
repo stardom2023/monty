@@ -25,14 +25,14 @@ void insert(stack_t **stack, unsigned int line)
 			fclose(bus.file);
 			free(bus.content);
 			clear_stack(*stack);
-			exit(EXIT_FAILURE);}}
+			exit(EXIT_FAILURE); }}
 
 	else
 	{ fprintf(stderr, "L%d: usage: push integer\n", line);
 		fclose(bus.file);
 		free(bus.content);
 		clear_stack(*stack);
-		exit(EXIT_FAILURE);}
+		exit(EXIT_FAILURE); }
 
 	c = atoi(bus.arg);
 	if (bus.lifi == 0)

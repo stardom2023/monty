@@ -17,7 +17,7 @@ void display(stack_t **stack, unsigned int line)
 		return;
 	while (h)
 	{
-		printf("%d\n", h->n);
+		printf("%d\n", h->value);
 		h = h->next;
 	}
 }

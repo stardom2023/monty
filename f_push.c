@@ -21,18 +21,23 @@ void insert(stack_t **stack, unsigned int line)
 			if (bus.arg[m] > 57 || bus.arg[m] < 48)
 				flag = 1; }
 		if (flag == 1)
-		{ fprintf(stderr, "L%d: usage: push integer\n", line);
+		{
+			fprintf(stderr, "L%d: usage: push integer\n", line);
 			fclose(bus.file);
 			free(bus.content);
 			clear_stack(*stack);
-			exit(EXIT_FAILURE); }}
+			exit(EXIT_FAILURE);
+		}
+	}
 
 	else
-	{ fprintf(stderr, "L%d: usage: push integer\n", line);
+	{
+		fprintf(stderr, "L%d: usage: push integer\n", line);
 		fclose(bus.file);
 		free(bus.content);
 		clear_stack(*stack);
-		exit(EXIT_FAILURE); }
+		exit(EXIT_FAILURE);
+	}
 	c = atoi(bus.arg);
 	if (bus.lifi == 0)
 		_node(stack, c);
